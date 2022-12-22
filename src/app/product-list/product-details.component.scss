@@ -1,0 +1,35 @@
+img{
+  position: relative;
+  left: 800px;
+  bottom: 250px;
+}
+.card-body{
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #583101;
+
+}
+app-star{
+    display: inline-block;
+    position: relative;
+    top: 13px;
+    left: 8px;
+}
+.description{
+    color: #583101;
+    margin-left: 5px;
+}
+.button{
+    position: relative;
+    bottom: 120px;
+    left: 350px;
+    
+
+}
+.card-body{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    margin-left: 300px;
+}
