@@ -6,10 +6,12 @@
                 <div>
                     <label for="Firstname">Firstname</label>
                     <input type="text" formControlName="Firstname">
+                    <div class="text-danger" *ngIf="!registrationForm.get('Firstname')?.valid && registrationForm.get('Firstname')?.touched">required field</div>
                 </div>
                 <div>
                     <label for="Lastname">Lastname</label>
                     <input type="text" formControlName="Lastname">
+                    <div class="text-danger" *ngIf="!registrationForm.get('Lastname')?.valid && registrationForm.get('Lastname')?.touched">required field</div>
                 </div>
                 <div>
                     <label for="Phone">Phone</label>
@@ -29,20 +31,23 @@
                 <div>
                     <label for="Username">Username</label>
                     <input type="text" formControlName="Username">
+                    <div class="text-danger" *ngIf="!registrationForm.get('Username')?.valid && registrationForm.get('Username')?.touched">required field</div>
                 </div>
                 <div>
                     <label for="Password">Password</label>
                     <input type="password" formControlName="Password">
+                    <div class="text-danger" *ngIf="!registrationForm.get('Password')?.valid && registrationForm.get('Password')?.touched">required field</div>
                 </div>
                 <div>
                     <label for="Address">Address</label>
                     <input type="text" formControlName="Address">
+                    <div class="text-danger" *ngIf="!registrationForm.get('Address')?.valid && registrationForm.get('Address')?.touched">required field</div>
                 </div>
                 <div>
                     <label for="Mail">Mail</label>
                     <input type="text" formControlName="Mail">
+                    <div class="text-danger" *ngIf="!registrationForm.get('Mail')?.valid && registrationForm.get('Mail')?.touched">required field</div>
                 </div>
-
                 <button type="submit" class="btn btn-secondary">register</button>
             </section>
         </form>

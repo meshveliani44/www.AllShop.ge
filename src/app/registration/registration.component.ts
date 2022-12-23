@@ -14,12 +14,12 @@ export class RegistrationComponent implements OnInit {
     this.registrationForm = new FormGroup({
       Firstname: new FormControl(null, [Validators.required, Validators.minLength(2)]),
       Lastname: new FormControl(null, [Validators.required, Validators.minLength(4)]),
-      Username: new FormControl(null, [Validators.required, Validators.maxLength(18)]),
-      Password: new FormControl(null, Validators.required),
+      Username: new FormControl(null, [Validators.required, Validators.minLength(3), Validators.maxLength(18)]),
+      Password: new FormControl(null, [Validators.required, Validators.minLength(5), Validators.maxLength(18)]),
       Address: new FormControl(null, Validators.required),
       Mail: new FormControl(null, Validators.required),
       Phone: new FormControl(null,),
-      sex: new FormControl(null, Validators.required)
+      sex: new FormControl(null, )
 
   })
   }

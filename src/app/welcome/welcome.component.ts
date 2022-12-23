@@ -17,8 +17,8 @@ export class WelcomeComponent implements OnInit {
     //   Password: new FormControl(null, Validators.required),
     // })
     this.logInForm = this.formbuilder.group({
-      Username: new FormControl(null, Validators.required),
-      Password: new FormControl(null, Validators.required),
+      Username: new FormControl(null, [Validators.required, Validators.minLength(3), Validators.maxLength(18)]),
+      Password: new FormControl(null, [Validators.required, Validators.minLength(5), Validators.maxLength(18)]),
     })
 
   }

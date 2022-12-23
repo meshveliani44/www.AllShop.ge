@@ -15,7 +15,7 @@ export class AppComponent {
    }
 
   ngOnInit(): void {
-    this.router.navigate(['registration'])
+    this.router.navigate(['products'])
   }
 
 
