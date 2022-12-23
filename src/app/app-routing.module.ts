@@ -12,8 +12,9 @@ const routes: Routes = [
    
   {
 
-    path: 'welcome', component: WelcomeComponent,
+    path: 'welcome', 
     pathMatch: 'full',
+    component: WelcomeComponent,
     canActivate: [SignInGuard],
   },
   {
