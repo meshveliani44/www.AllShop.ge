@@ -11,7 +11,7 @@ export class ProductListComponent implements OnInit {
 getSingleProduct() {
 throw new Error('Method not implemented.');
 }
-  componentTitle: string = 'You chose: '
+  componentTitle: string = 'Item star rating number: '
   imageWidth: number = 100;
   imageHeight: number = 100;
   imageMargin: number = 2;
@@ -23,7 +23,7 @@ throw new Error('Method not implemented.');
   }
   set listFilter(value: string) {
     this._listFilter = value;
-    console.log(' is setter:', value)
+    console.log('filtered by:', value)
     this.filteredProducts = this.performFilter(value);
   }
 
@@ -49,7 +49,7 @@ throw new Error('Method not implemented.');
     this.listFilter = ''
   }
   onRatingClicked(message: string): void {
-    this.componentTitle = ' You chose:' + message
+    this.componentTitle = ' Item star rating number:' + message
   }
 
 }

@@ -125,6 +125,16 @@ export class productService {
         "starRating": 4.1,
         "imageUrl": "https://cdn.onoff.ge/media/thumbs/062/0626770_marshall-major-iv-black_415.jpeg"
       },
+      {
+        "productId": 10,
+        "productName": "backpack",
+        "productCode": "GDG-0079",
+        "releaseDate": "february 9, 2020",
+        "description": "LTT Backpack, black",
+        "price": 249.99,
+        "starRating": 4.4,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1O-34cycyXrfHftB85FoDATQ4CUpXo7vi6g&usqp=CAU"
+      },
 
     ]
   }

@@ -1,6 +1,5 @@
-
 <div class="background">
-    <div id="welcome" class="shadow-lg p-3 mb-5 bg-body rounded" >
+    <div id="welcome" class="shadow-lg p-3 mb-5 bg-body rounded">
         <h1>Welcome To The Shopping World</h1>
         <div class="form">
             <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
@@ -10,12 +9,17 @@
                 </div>
                 <div class="password">
                     <label for="password"> <b>password:</b> </label>
-                    <input type="password" formControlName="Password"  placeholder="type your password">
+                    <input type="password" formControlName="Password" placeholder="type your password">
+
+                    <div class="text-danger"
+                        *ngIf="!logInForm.get('Username')?.valid && logInForm.get('Username')?.touched">all fields must
+                        be filled</div>
+
                     <div> <button type="submit">Log in </button></div>
                 </div>
             </form>
             <div class="aditional">
-            <span>If you don't have an account <a class="link" (click)="logIn()">register</a> here </span>
+                <span>If you don't have an account <a class="link" (click)="logIn()">register</a> here </span>
             </div>
         </div>
     </div>

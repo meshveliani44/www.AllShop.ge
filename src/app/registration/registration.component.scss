@@ -8,6 +8,7 @@ height: 30px;
 }
 label{
     font-size: 20px;
+    color: #004b23;
 }
 .background{
     width: 100%;
@@ -41,9 +42,23 @@ button{
 
 }
 select{
-    margin-top: 25px;
+    margin-top: 35px;
     margin-left: 15px;
+    font-size: 15px;
+    background-color: #e3d5ca ;
 }
 span{
-    font-size: 20px;
+    font-size: 25px;
+    color: #004b23;
+}
+.goBackToProducts{
+    background-color: #9fb5a9;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    left: 300px;
+    bottom: 70px;
+    &:hover{
+        background-color: #e3d5ca;
+    }
 }

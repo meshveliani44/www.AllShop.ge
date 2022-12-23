@@ -12,9 +12,9 @@ export class RegistrationComponent implements OnInit {
   registrationForm: FormGroup
   constructor(private router: Router) { 
     this.registrationForm = new FormGroup({
-      Firstname: new FormControl(null, Validators.minLength(2)),
-      Lastname: new FormControl(null, Validators.minLength(4)),
-      Username: new FormControl(null, Validators.maxLength(18)),
+      Firstname: new FormControl(null, [Validators.required, Validators.minLength(2)]),
+      Lastname: new FormControl(null, [Validators.required, Validators.minLength(4)]),
+      Username: new FormControl(null, [Validators.required, Validators.maxLength(18)]),
       Password: new FormControl(null, Validators.required),
       Address: new FormControl(null, Validators.required),
       Mail: new FormControl(null, Validators.required),
@@ -35,6 +35,10 @@ export class RegistrationComponent implements OnInit {
     } else{
       console.log('registration failed')
     }
+  }
+
+  goBackToProducts(){
+    this.router.navigate(['/products'])
   }
 
 }
