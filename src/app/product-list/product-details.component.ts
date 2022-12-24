@@ -8,11 +8,16 @@ import { productService } from './product.service';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
+  addToCart(argument: Iproduct) {
+    throw new Error('Method not implemented.');
+  }
   componentTitle: string = 'Product Details'
 
 
   product: Iproduct | undefined;
-
+  imageWidth: number = 200;
+  imageHeight: number = 200;
+  imageMargin: number = 0;
 
   constructor(private route: ActivatedRoute,
     private router: Router,
@@ -23,24 +28,6 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.product = this._service.getProductById(id)
-
-
-
-    
- 
-    
-
-
- //  this.products = {
-      // "productId": id,
-      // "productName": "Leaf Rake",
-      // "productCode": "GDN-0011",
-      // "releaseDate": "March 19, 2021",
-      // "description": "Leaf rake with 48-inch wooden handle.",
-      // "price": 19.95,
-      // "starRating": 3.2,
-      // "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWEVoq7Keb3f0H9jS8ywNv8t8priCW5EDjA&usqp=CAU"
-  //  }
   }
 
 

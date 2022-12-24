@@ -1,17 +1,16 @@
 img{
-  position: relative;
-  left: 800px;
-  bottom: 250px;
+ 
   box-shadow: 0 1rem 3rem rgba(black, .175);
 //   width: 100px;
 //   height: 100px;
+
 }
 .card-body{
     line-height: 60px;
     font-size: 30px;
     font-weight: 600;
     color: #583101;
-
+   
 }
 app-star{
     display: inline-block;
@@ -29,11 +28,18 @@ app-star{
 
 }
 .card-body{
-    width: 400px;
+    width: 800px;
     height: 600px;
     border: 1px solid #004b23;
     border-radius: 15px;
     margin-left: 300px;
     margin-top: 40px;
     box-shadow: 0 1rem 3rem rgba(black, .175);
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    
 }

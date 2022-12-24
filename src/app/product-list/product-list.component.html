@@ -18,7 +18,7 @@
                 <thead>
                     <tr>
                         <th>
-                            <button  (click)="hideImage()">
+                            <button  (click)="hideImage()" class="btn btn-primary">
                                 {{showImage ? 'hide' : 'show'}} Image
                             </button>
                         </th>
@@ -48,7 +48,7 @@
                             <app-star [rating]='product.starRating' (ratingClicked)="onRatingClicked($event)">
                             </app-star>
                         </td>
-                        <td><button (click)="addToCart(product)">add</button></td>
+                        <td><button (click)="addToCart(product)" class="addTocart">add to cart</button></td>
                     </tr>
 
                 </tbody>
