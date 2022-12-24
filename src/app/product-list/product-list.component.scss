@@ -33,5 +33,9 @@ left: 600px;
     // margin-left: 600px;
 }
 button{
-     background-color: #9d6b53;;
+     background-color: #9d6b53;
+     border-radius: 10px;
+     &:hover{
+        background-color: #e3d5ca;
+     }
 }
