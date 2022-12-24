@@ -13,6 +13,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { CartComponentComponent } from './cart/cart-component/cart-component.component';
 
 
 
@@ -28,6 +29,7 @@ import { RegistrationComponent } from './registration/registration.component';
     RegistrationComponent,
     ConvertToSpacesPipe,
     FooterComponent,
+    CartComponentComponent,
     
   
     

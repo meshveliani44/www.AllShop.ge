@@ -48,6 +48,7 @@
                             <app-star [rating]='product.starRating' (ratingClicked)="onRatingClicked($event)">
                             </app-star>
                         </td>
+                        <td><button (click)="addToCart(product)">add</button></td>
                     </tr>
 
                 </tbody>

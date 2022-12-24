@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { productService } from './product.service';
 import { Iproduct } from './product.interface';
+import { CartService } from '../cart/cart.service';
 
 @Component({
   templateUrl: './product-list.component.html',
@@ -33,7 +34,8 @@ throw new Error('Method not implemented.');
 
   ]
 
-  constructor(private _service: productService,) { 
+  constructor(private _service: productService,
+    private cartservice: CartService) { 
     this.products = this._service.getProductList()
   }
 
@@ -51,5 +53,10 @@ throw new Error('Method not implemented.');
   onRatingClicked(message: string): void {
     this.componentTitle = ' Item star rating number:' + message
   }
+
+addToCart(product: Iproduct){
+  this.cartservice.addToCart(product)
+}
+
 
 }
