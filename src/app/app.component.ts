@@ -15,7 +15,7 @@ export class AppComponent {
    }
 
   ngOnInit(): void {
-    this.router.navigate(['products'])
+    this.router.navigate(['/welcome'])
   }
 
 

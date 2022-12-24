@@ -5,13 +5,6 @@ img{
 //   height: 100px;
 
 }
-.card-body{
-    line-height: 60px;
-    font-size: 30px;
-    font-weight: 600;
-    color: #583101;
-   
-}
 app-star{
     display: inline-block;
     position: relative;
@@ -41,5 +34,10 @@ app-star{
     position: relative;
     bottom: 20px;
     left: 80px;
-    
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #583101;
+
 }
+
