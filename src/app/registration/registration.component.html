@@ -2,7 +2,7 @@
 <div class="background">
     <div class="registration">
         <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
-            <section class="personal-info">
+            <section class="personal-info" >
                 <div>
                     <label for="Firstname">Firstname</label>
                     <input type="text" formControlName="Firstname">
@@ -24,7 +24,6 @@
                         <option value="female">female</option>
                     </select>
                 </div>
-
             </section>
 
             <section class="registration-details">

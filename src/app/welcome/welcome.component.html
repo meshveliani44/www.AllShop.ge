@@ -10,7 +10,6 @@
                 <div class="password">
                     <label for="password"> <b>password:</b> </label>
                     <input type="password" formControlName="Password" placeholder="type your password">
-
                     <div class="text-danger"
                         *ngIf="!logInForm.get('Username')?.valid && logInForm.get('Username')?.touched">all fields must
                         be filled</div>

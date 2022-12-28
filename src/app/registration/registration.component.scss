@@ -12,7 +12,7 @@ label{
 }
 .background{
     width: 100%;
-    height: 700px;
+    height: 713px;
 background-color: #ac8168;    
 // display: flex;
 //     align-items: center;   
@@ -61,4 +61,19 @@ span{
     &:hover{
         background-color: #e3d5ca;
     }
+}
+.personal-info{
+    border: 1px solid black;
+    width: 340px;
+ }
+@media (max-width: 480px){
+//  input{
+//     width: 120px;
+//     height: 20px;
+//  }
+
+ .background{
+    width: 100%;
+ }
+
 }
