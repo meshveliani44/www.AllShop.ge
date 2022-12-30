@@ -1,42 +1,49 @@
+<!-- <div class="container"> -->
 <app-header></app-header>
 <div class="card">
   <div class="card-header">
     {{componentTitle + ': ' + product?.productName}}
   </div>
-
 </div>
 
-<div class='card-body' *ngIf='product'>
 
-  <div class='container'>
-    <div class='column'>
-      <span>Name: </span>
-      <span class="description"> {{product.productName}} </span>
-    </div>
-    <div class='column'>
-      <span>Code:</span>
-      <span class="description">{{product.productCode | lowercase}}</span>
-    </div>
-    <div class='column'>
-      <span>Description:</span>
-      <span class="description">{{product.description}}</span>
-    </div>
-    <div class='column'>
-      <span>Availability:</span>
-      <span class="description">{{product.releaseDate}}</span>
-    </div>
-    <div class='column'>
-      <span>Price:</span>
-      <span class="description">{{product.price|currency:'USD':'symbol'}}</span>
-    </div>
-    <div class='column'>
-      <span>5 Star Rating:</span>
-      <span>
-        <app-star [rating]='product.starRating'>
-        </app-star>
-      </span>
-    </div>
-    <div class="button">
+  <div class='card-body' *ngIf='product'>
+
+    <main>
+      <div>
+        <span>Name: </span>
+        <span class="description"> {{product.productName}} </span>
+      </div>
+
+      <div>
+        <span>Code:</span>
+        <span class="description">{{product.productCode | lowercase}}</span>
+      </div>
+
+
+      <div>
+        <span>Description:</span>
+        <span class="description">{{product.description}}</span>
+      </div>
+      <div>
+        <span>Availability:</span>
+        <span class="description">{{product.releaseDate}}</span>
+      </div>
+      <div>
+        <span>Price:</span>
+        <span class="description">{{product.price|currency:'USD':'symbol'}}</span>
+      </div>
+      <div>
+        <span>  Quantity:</span>
+        <span>{{product.quantity}}</span>
+      </div>
+
+      <!-- <span>5 Star Rating:</span>  -->
+      <!-- 
+     <app-star [rating]='product.starRating'>
+          </app-star> -->
+
+
       <button (click)="goBack()" class="btn btn-outline-success">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left"
           viewBox="0 0 16 16">
@@ -46,19 +53,11 @@
             d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
         </svg> back
       </button>
-    </div>
+   
+        <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]="imageWidth"
+          [style.margin.px]="imageMargin" [style.height.px]="imageHeight">
 
-
+    </main>
   </div>
-
-  <div>
-    <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]="imageWidth"
-      [style.margin.px]="imageMargin" [style.height.px]="imageHeight">
-  </div>
-</div>
-
-
-
-<div>
-  <app-footer></app-footer>
-</div>
+<app-footer></app-footer>
+<!-- </div> -->

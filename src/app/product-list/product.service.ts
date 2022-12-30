@@ -21,7 +21,8 @@ export class productService {
       "description": "Leaf rake with 48-inch wooden handle.",
       "price": 19.95,
       "starRating": 3.2,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWEVoq7Keb3f0H9jS8ywNv8t8priCW5EDjA&usqp=CAU"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWEVoq7Keb3f0H9jS8ywNv8t8priCW5EDjA&usqp=CAU",
+      "quantity": 4
     },
     {
       "productId": 2,
@@ -31,7 +32,8 @@ export class productService {
       "description": "15 gallon capacity rolling garden cart",
       "price": 32.99,
       "starRating": 4.2,
-      "imageUrl": "https://pyxis.nymag.com/v1/imgs/742/966/0471986284a1fad1985a37e49f3be0d269.rsquare.w600.jpg"
+      "imageUrl": "https://pyxis.nymag.com/v1/imgs/742/966/0471986284a1fad1985a37e49f3be0d269.rsquare.w600.jpg",
+      "quantity": 4
     },
     {
       "productId": 3,
@@ -41,7 +43,8 @@ export class productService {
       "description": "Curved claw steel hammer",
       "price": 8.9,
       "starRating": 2.5,
-      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_98659ca6-980f-4680-8c2f-eba871f9bf49"
+      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_98659ca6-980f-4680-8c2f-eba871f9bf49",
+      "quantity": 4
     },
     {
       "productId": 4,
@@ -51,7 +54,8 @@ export class productService {
       "description": "15-inch steel blade hand saw",
       "price": 11.55,
       "starRating": 3.7,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvK6gXDq7j7LRcZvfy89W8J8Iht3-6A4pHw&usqp=CAU"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvK6gXDq7j7LRcZvfy89W8J8Iht3-6A4pHw&usqp=CAU",
+      "quantity": 4
     },
     {
       "productId": 5,
@@ -61,7 +65,8 @@ export class productService {
       "description": "Standard two-button video game controller",
       "price": 35.95,
       "starRating": 4.6,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8Robhb0j-sS3brtASLY8NYOg4mULHKb-ow&usqp=CAU"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8Robhb0j-sS3brtASLY8NYOg4mULHKb-ow&usqp=CAU",
+      "quantity": 4
     },
     {
       "productId": 6,
@@ -71,7 +76,8 @@ export class productService {
       "description": "Modern Leather sofa",
       "price": 1144.40,
       "starRating": 4.0,
-      "imageUrl": "https://cdn-images.article.com/products/SKU2128/2890x1500/image88973.jpg"
+      "imageUrl": "https://cdn-images.article.com/products/SKU2128/2890x1500/image88973.jpg",
+      "quantity": 4
     },
     {
       "productId": 7,
@@ -81,7 +87,8 @@ export class productService {
       "description": "mouse for computer with bluethooth",
       "price": 14.60,
       "starRating": 3.5,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2JDewuh19uN8qiD1aXDBC7H2h2bZ_M2EquA&usqp=CAU"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2JDewuh19uN8qiD1aXDBC7H2h2bZ_M2EquA&usqp=CAU",
+      "quantity": 4
     },
     {
       "productId": 8,
@@ -91,7 +98,8 @@ export class productService {
       "description": "medium size wallet, black",
       "price": 21.30,
       "starRating": 3.0,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXsoLWmDTeuRMbtUm2b7KRYEHRH4URwyU9TFaJa83dy3H6PbnmEyJnCaftSFn65U8n18&usqp=CAU"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXsoLWmDTeuRMbtUm2b7KRYEHRH4URwyU9TFaJa83dy3H6PbnmEyJnCaftSFn65U8n18&usqp=CAU",
+      "quantity": 4
     },
     {
       "productId": 9,
@@ -101,7 +109,8 @@ export class productService {
       "description": "Marshall MAJOR 4 black",
       "price": 199.99,
       "starRating": 4.1,
-      "imageUrl": "https://cdn.onoff.ge/media/thumbs/062/0626770_marshall-major-iv-black_415.jpeg"
+      "imageUrl": "https://cdn.onoff.ge/media/thumbs/062/0626770_marshall-major-iv-black_415.jpeg",
+      "quantity": 4
     },
     {
       "productId": 10,
@@ -111,7 +120,8 @@ export class productService {
       "description": "LTT Backpack, black",
       "price": 249.99,
       "starRating": 4.4,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1O-34cycyXrfHftB85FoDATQ4CUpXo7vi6g&usqp=CAU"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1O-34cycyXrfHftB85FoDATQ4CUpXo7vi6g&usqp=CAU",
+      "quantity": 4
     },
 
   ]

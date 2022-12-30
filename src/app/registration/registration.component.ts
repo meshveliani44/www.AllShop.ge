@@ -7,6 +7,8 @@ import {  Router } from '@angular/router';
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss']
 })
+
+
 export class RegistrationComponent implements OnInit {
 
   registrationForm: FormGroup
@@ -19,7 +21,7 @@ export class RegistrationComponent implements OnInit {
       Address: new FormControl(null, Validators.required),
       Mail: new FormControl(null, Validators.required),
       Phone: new FormControl(null,),
-      sex: new FormControl(null, )
+      sex: new FormControl(null, Validators.required)
 
   })
   }

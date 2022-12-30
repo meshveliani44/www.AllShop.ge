@@ -7,4 +7,5 @@ export interface Iproduct {
     starRating: number
     imageUrl: string
     productCode:string
+    quantity:number
 }
