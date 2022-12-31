@@ -8,7 +8,7 @@ import {  Router } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'final-project';
+  title = 'AllShop.ge';
 
   constructor(private router: Router) {
 
