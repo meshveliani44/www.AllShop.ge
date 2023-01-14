@@ -1,25 +1,30 @@
 <div class="background">
     <div id="welcome" class="shadow-lg p-3 mb-5 bg-body rounded">
-        <h1>Welcome To The Shopping World</h1>
-        <div class="form">
+
+        <div class="formDisplay">
             <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
                 <div class="username">
-                    <label for="username"><b>Username:</b> </label>
+                    <!-- <label for="username"><b>Username:</b> </label> -->
                     <input type="text" formControlName="Username" placeholder="type your username">
                 </div>
                 <div class="password">
-                    <label for="password"> <b>password:</b> </label>
+                    <!-- <label for="password"> <b>Password:</b> </label> -->
                     <input type="password" formControlName="Password" placeholder="type your password">
-                    <div class="text-danger"
-                        *ngIf="!logInForm.get('Username')?.valid && logInForm.get('Username')?.touched">all fields must
-                        be filled</div>
-
-                    <div> <button type="submit">Log in </button></div>
+                    <!-- <div class="text-danger"
+                        *ngIf="!logInForm.get('Username')?.valid && logInForm.get('Username')?.touched">all fields
+                        must
+                        be filled</div> -->
                 </div>
+                <button type="submit" class="LogIn">Log in </button>
+
             </form>
-            <div class="aditional">
-                <span>If you don't have an account <a class="link" (click)="logIn()">register</a> here </span>
-            </div>
+
+        </div>
+
+        <div class="aditional">
+            <span>If you don't have an account
+                 <a class="link" (click)="logIn()">register</a>here </span>
         </div>
     </div>
 </div>
+<app-footer></app-footer>
