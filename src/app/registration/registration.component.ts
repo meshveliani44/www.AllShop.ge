@@ -39,8 +39,8 @@ export class RegistrationComponent implements OnInit {
     }
   }
 
-  // goBackToProducts(){
-  //   this.router.navigate(['/products'])
-  // }
+  goBackToProducts(){
+    this.router.navigate(['/welcome'])
+  }
 
 }

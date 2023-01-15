@@ -55,20 +55,22 @@ input {
   background: transparent;
   transition: border-color 0.2s;
   background: linear-gradient(0.25turn, #003459, #007ea7);
+  width: 250px;
+  height: 40px;
 
 }
 
 .usernameInput {
   position: absolute;
-  left: 40%;
-  top: 20%;
+  left: 36%;
+  top: 18%;
 
 }
 
 .passwordInput {
   position: absolute;
-  left: 40%;
-  top: 30%;
+  left: 36%;
+  top: 32%;
 }
 
 input.ng-invalid.ng-touched {
@@ -80,18 +82,20 @@ input.ng-invalid.ng-touched {
 }
 
 .LogIn {
-  background-color: #382924;
+  // background-color: #52b788;
   color: #edc4b3;
   border: none;
-  border-radius: 15%;
+  border-radius: 20px;
   position: absolute;
   top: 260px;
   left: 44%;
   width: 100px;
   height: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #006D77 0%, #22223B 100%);
+  border: 1px solid #006D77;
 
   &:hover {
-    background-color: #1a100b;
+    background: radial-gradient(50% 50% at 50% 50%, #003049 83.12%, #006D77 100%);
   }
 }
 

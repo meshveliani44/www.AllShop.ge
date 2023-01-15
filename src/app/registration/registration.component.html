@@ -1,8 +1,7 @@
-<!-- <app-header></app-header> -->
-
 
 <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
-    <main id="display">
+    <main id="display"> 
+        <button (click)="goBackToProducts()"> < back </button>
         <div class="parent">
             <section class="personal-info">
                 <div>
@@ -67,7 +66,9 @@
                 </div>
             </section>
         </div>
+       
     </main>
 </form>
+
 
 <app-footer></app-footer>
