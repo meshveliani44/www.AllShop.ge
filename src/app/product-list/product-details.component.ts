@@ -8,19 +8,26 @@ import { productService } from './product.service';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
+  addToCart(argument: Iproduct) {
+    throw new Error('Method not implemented.');
+  }
   componentTitle: string = 'Product Details'
 
 
-  products: Iproduct | undefined;
-
+  product: Iproduct | undefined;
+  imageWidth: number = 200;
+  imageHeight: number = 200;
+  imageMargin: number = 0;
 
   constructor(private route: ActivatedRoute,
     private router: Router,
+    private _service: productService,
+
   ) { }
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-   
+    this.product = this._service.getProductById(id)
   }
 
 

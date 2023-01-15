@@ -8,14 +8,14 @@ import {  Router } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'final-project';
+  title = 'AllShop.ge';
 
   constructor(private router: Router) {
 
    }
 
   ngOnInit(): void {
-    this.router.navigate(['products'])
+    this.router.navigate(['/welcome'])
   }
 
 
