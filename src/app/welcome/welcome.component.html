@@ -1,29 +1,28 @@
-<div class="background">
-    <div id="welcome" class="shadow-lg p-3 mb-5 bg-body rounded">
 
-        <div class="formDisplay">
+<div class="background">
+    <h1>welcome to allshop</h1>
+    <div id="welcome">
+
             <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
                 <div class="username">
                     <!-- <label for="username"><b>Username:</b> </label> -->
-                    <input type="text" formControlName="Username" placeholder="type your username">
+                    <input type="text" formControlName="Username" placeholder="type your username" class="usernameInput">
                 </div>
                 <div class="password">
                     <!-- <label for="password"> <b>Password:</b> </label> -->
-                    <input type="password" formControlName="Password" placeholder="type your password">
+                    <input type="password" formControlName="Password" placeholder="type your password" class="passwordInput">
                     <!-- <div class="text-danger"
                         *ngIf="!logInForm.get('Username')?.valid && logInForm.get('Username')?.touched">all fields
                         must
                         be filled</div> -->
                 </div>
                 <button type="submit" class="LogIn">Log in </button>
-
             </form>
 
-        </div>
-
         <div class="aditional">
-            <span>If you don't have an account
-                 <a class="link" (click)="logIn()">register</a>here </span>
+            <span>If you don't have an account click
+                <a class="link" (click)="logIn()">here</a> </span>
+               
         </div>
     </div>
 </div>
