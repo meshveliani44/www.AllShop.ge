@@ -8,6 +8,7 @@
   // flex-direction: column;
   position: relative;
 }
+
 h1 {
   position: absolute;
   left: 24.5%;
@@ -34,21 +35,14 @@ h1 {
   border: 3px solid #006D77;
   box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
-// .opacity{
-//   width: 50%;
-//   height: 450px;
-//   background-color: #003459;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+  // .opacity{
+  //   width: 50%;
+  //   height: 450px;
+  //   background-color: #003459;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
 }
-
-
-
-
-
-
-
 
 input {
   border: 0;
@@ -63,19 +57,25 @@ input {
   background: linear-gradient(0.25turn, #003459, #007ea7);
 
 }
-.usernameInput{
+
+.usernameInput {
   position: absolute;
   left: 40%;
   top: 20%;
 
 }
-.passwordInput{
+
+.passwordInput {
   position: absolute;
   left: 40%;
   top: 30%;
-
 }
-::placeholder{
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+::placeholder {
   color: #84A98C;
 }
 
@@ -95,25 +95,7 @@ input {
   }
 }
 
-
-
-
-b {
-  color: #583101;
-}
-
-
-.link {
-  cursor: pointer;
-}
-
-input.ng-invalid.ng-touched {
-  border: 1px solid red;
-}
-
-
-
-span{
+span {
   position: absolute;
   top: 450px;
   left: 80px;
@@ -121,7 +103,9 @@ span{
 }
 
 
-
+.link {
+  cursor: pointer;
+}
 
 
 
