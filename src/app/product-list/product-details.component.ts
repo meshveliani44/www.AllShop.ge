@@ -15,9 +15,11 @@ export class ProductDetailsComponent implements OnInit {
 
 
   product: Iproduct | undefined;
-  imageWidth: number = 200;
-  imageHeight: number = 200;
+  imageWidth: number =300;
+  imageHeight: number = 300;
   imageMargin: number = 0;
+  borderWidth: number = 1;
+  boxShadow: number = 20;
 
   constructor(private route: ActivatedRoute,
     private router: Router,
